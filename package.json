@@ -23,7 +23,9 @@
     "node": ">=8.0.0"
   },
   "dependencies": {
+    "@didi/umi-plugin-vue": "^0.0.1",
     "aws-sdk": "^2.521.0",
+    "vue": "^2.6.10",
     "webpack": "^4.39.3"
   }
 }

@@ -3,6 +3,8 @@
   <div>
     Hello, {{ isAuth }} {{ name }} for {{lang}}! <br />
     <button @click="onClick">touch me</button>
+
+    <router-link to="/test">test</router-link>
   </div>
 </template>
 <script>

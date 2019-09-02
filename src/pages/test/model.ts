@@ -1,18 +1,19 @@
 export default {
-  namespace: 'model',
+  namespace: 'test',
   state: {
-    isAuth: false,
-    name: 'ddot',
+    select: 'a',
+    name: 'dasdasd',
   },
   reducers: {
     changeAuth(state) {
-      state.isAuth = true;
+      state.select = state.value;
     },
   },
   effects: {
-    *logout(_, { call, put }) {
+    *select({ payload }, { call, put }) {
       yield put({
         type: 'changeAuth',
+        payload: payload
       });
     },
   },
